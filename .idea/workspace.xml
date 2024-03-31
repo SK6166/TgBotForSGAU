@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36359ad5-82e6-41cc-a4ba-2a98b497eb15" name="Changes" comment="Created exe">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/TgBotForSGAU.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TMP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/Main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/PIL/_imaging.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/PIL/_imagingcms.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/PIL/_imagingmath.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/PIL/_imagingtk.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/PIL/_webp.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/VCRUNTIME140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_asyncio.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_bz2.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_cffi_backend.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_ctypes.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_decimal.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_hashlib.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_lzma.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_multiprocessing.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_overlapped.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_queue.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_socket.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_sqlite3.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_ssl.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/_wmi.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-private-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/certifi/py.typed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/charset_normalizer/md.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/charset_normalizer/md__mypyc.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/libcrypto-3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/libffi-8.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/libssl-3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy.libs/libopenblas64__v0.3.23-293-gc2f4bdbb-gcc_10_3_0-2bde3a66a51006b2b53eb373ff767a3f.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/core/_multiarray_tests.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/core/_multiarray_umath.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/fft/_pocketfft_internal.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/linalg/_umath_linalg.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_bounded_integers.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_common.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_generator.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_mt19937.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_pcg64.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_philox.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/_sfc64.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/bit_generator.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/numpy/random/mtrand.cp312-win_amd64.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/pyexpat.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/python312.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/select.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/unicodedata.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/users.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/127.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/128.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/130.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/131.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/132.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/134.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/153.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/153а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/216.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/228.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/230.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/234.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/239.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/240.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/241.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/242.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/243.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/244.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/249.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/251.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/253.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/318.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/319.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/320.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/33.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/335.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/336.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/337.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/338.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/338а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/340.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/342.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/344.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/347.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/348.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/349.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/350.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/352.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/353.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/354.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/355.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/библиотека.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/буфет.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/гидравлика.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/музей.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/пасхалка.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/профком.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/_internal/videos/corpus2/столовая.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/users.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/127.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/128.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/130.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/131.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/132.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/134.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/153.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/153а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/216.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/228.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/230.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/234.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/239.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/240.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/241.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/242.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/243.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/244.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/249.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/251.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/253.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/318.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/319.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/320.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/33.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/335.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/336.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/337.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/338.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/338а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/340.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/342.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/344.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/347.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/348.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/349.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/350.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/352.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/353.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/354.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/355.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/библиотека.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/буфет.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/гидравлика.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/музей.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/пасхалка.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/профком.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Main/videos/corpus2/столовая.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/users.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/127.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/128.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/130.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/131.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/132.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/134.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/153.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/153а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/216.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/228.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/230.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/234.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/239.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/240.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/241.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/242.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/243.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/244.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/249.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/251.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/253.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/318.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/319.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/320.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/33.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/335.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/336.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/337.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/338.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/338а.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/340.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/342.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/344.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/347.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/348.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/349.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/350.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/352.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/353.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/354.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/355.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/библиотека.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/буфет.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/гидравлика.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/музей.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/пасхалка.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/профком.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/corpus2/столовая.mp4" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2cMOh5ihynzhCvoIBzEp9L7LSzn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TMP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ALL_Python/TMP_EXPERIMENT&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TgBotForSGAU" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TMP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TgBotForSGAU" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TMP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TgBotForSGAU" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.TMP" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36359ad5-82e6-41cc-a4ba-2a98b497eb15" name="Changes" comment="" />
+      <created>1707918096392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707918096392</updated>
+    </task>
+    <task id="LOCAL-00001" summary="2">
+      <option name="closed" value="true" />
+      <created>1707934909166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707934909166</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <option name="closed" value="true" />
+      <created>1708010347384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708010347384</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <MESSAGE value="exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="exe" />
+  </component>
+</project>

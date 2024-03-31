@@ -2,7 +2,7 @@ import telebot
 import sqlite3
 import os
 
-from SECRET import TG_KEY, ADMINS
+from SECRET import TG_KEY, ADMINS, VIDEO_CHAT_ID, TEXT_CHAT_ID
 from telebot import types
 
 
@@ -22,37 +22,50 @@ API_KEY = TG_KEY
 
 bot = telebot.TeleBot(TG_KEY)
 
+ALL_FACK = [
+    ('Агрономический факультет', 'https://www.vavilovsar.ru/upravlenie-obespecheniya-kachestva-obrazovaniya/struktura/otdel-organizacii-uchebnogo-processa-uk-№1/otdel-organizacii-uchebnogo-processa-uk-№-1/raspisanie-zanyatii-na-1-semestr-2013-2014-uchebno/agronomicheskii-fakultet/ochnaya-forma-obucheniya'),
+    ("Факультет экономики и менеджмента", 'https://www.vavilovsar.ru/upravlenie-obespecheniya-kachestva-obrazovaniya/struktura/otdel-organizacii-uchebnogo-processa-uk-№1/otdel-organizacii-uchebnogo-processa-uk-№-1/raspisanie-zanyatii-na-1-semestr-2013-2014-uchebno/fakultet-ekonomiki-i-menedjmenta/ochnaya-forma-obucheniya'),
+    ("Факультет инженерии и природообустройства", "https://www.vavilovsar.ru/upravlenie-obespecheniya-kachestva-obrazovaniya/struktura/otdel-organizacii-uchebnogo-processa-uk-№1/otdel-organizacii-uchebnogo-processa-uk-№2/raspisanie-ekzamenov-na-2-semestr-2013-2014-uchebn/fakultet-injenerii-i-prirodoobustroistva/ochnaya-forma-obucheniya"),
+    ("Факультет ветеринарной медицины, пищевых и биотехнологии", 'https://www.vavilovsar.ru/upravlenie-obespecheniya-kachestva-obrazovaniya/struktura/otdel-organizacii-uchebnogo-processa-uk-№1/otdel-organizacii-uchebnogo-processa-uk-№3/raspisanie-zanyatii-na-1-semestr-2013-2014-uchebno/fakultet-veterinarnoi-mediciny-pishchevyx-i-biotex/ochnaya-forma-obucheniya')
+]
 
 def is_admin(msg) -> bool:
-    if str(msg.from_user.id) in ADMINS:
-        return True
-    return False
+    if msg.chat.id != VIDEO_CHAT_ID:
+        return False
+    return True
+
+def is_admin_chat(msg) -> bool:
+    if msg.chat.id != TEXT_CHAT_ID:
+        return False
+    return True
 
 
-def find_path(corpus: str, aud: str) -> (str or None, bool):
-    aud = aud.lower()
-    MOV = 'videos/' + 'corpus' + corpus + '/' + aud + "." + 'MOV'
-    MP4 = 'videos/' + 'corpus' + corpus + '/' + aud + "." + 'mp4'
-    if os.path.isfile(MOV):
-        return (MOV, True)
-    if os.path.isfile(MP4):
-        return (MP4, True)
-    return (None, False)
-
+@bot.message_handler(commands=["!"])
+def tnp(msg):
+    print(msg.chat.id)
 
 @bot.message_handler(commands=["start"])
 def start(msg):
-    bot.send_message(msg.from_user.id, """Привет, студент! Добро пожаловать в чат-бот, который поможет тебе быстро и легко найти нужные аудитории и преподавателей в университете!
+    bot.send_message(msg.from_user.id, """Привет, студент! Добро пожаловать в чат-бот, который поможет тебе быстро
+и легко найти нужные аудитории и преподавателей в университете!
 
-Просто выбери номер учебного корпуса и номер нужной аудитории или фамилию преподавателя, и бот пришлет тебе видео-инструкцию о том, как добраться туда. Начальной точкой является гардероб, так что не беспокойся – мы поможем тебе не заблудиться. Желаем успешных занятий!
+Просто выбери номер учебного корпуса и номер нужной аудитории или фамилию преподавателя,
+и бот пришлет тебе видео-инструкцию о том, как добраться туда. Начальной точкой является гардероб,
+так что не беспокойся – мы поможем тебе не заблудиться. Желаем успешных занятий!
 
-Связь с администратором: https://t.me/skuYil
+В данный момент бот работает в тестовом режиме, и вы сможете найти информацию о доступных аудиториях: 
+319,318,320,Профком ,228,230,239,241,
+234,243,Музей,240,242,244,249,251,253,153,
+153а,338а,338,337,335,336,340,342,344,348,
+350,352,354,347,349,353,355,Гидравлика ,33,
+Столовая,128,127,130,132,134,131,Буфет,Библиотека
 
-В данный момент бот работает в тестовом режиме, и вы сможете найти информацию о доступных аудиториях: 319,318,320
-,Профком ,228,230,239,241,234,243,Музей,240,242,244,249,251 ,253,153,153а,338а,338,337,335,336,340,342,344,348,350,352,354,347,349,353,355,Гидравлика ,33,Столовая,128,127,130,132,134,131,Буфет,Библиотека.
-
-Напиши номер аудитории, чтобы найти путь
-/opt_structure - сменить корпус""")
+Команды:
+/opt_professor - найти профессора
+/list - список всех добавленных аудиторий 
+/opt_structure - выбрать корпус
+/ret - Остановить любое действие
+(Название аудитории) - найти путь""")
     con = sqlite3.connect('users.db')
     cur = con.cursor()
     r = f"SELECT CORP FROM USERS WHERE USER_ID = '{msg.from_user.id}'"
@@ -62,9 +75,19 @@ def start(msg):
         con.commit()
         con.close()
 
+@bot.message_handler(commands=["schedule"])
+def schedule(msg):
+    markup = types.InlineKeyboardMarkup([
+        [types.InlineKeyboardButton(text=ALL_FACK[0][0], url=ALL_FACK[0][1])],
+        [types.InlineKeyboardButton(text=ALL_FACK[1][0], url=ALL_FACK[1][1])],
+        [types.InlineKeyboardButton(text=ALL_FACK[2][0], url=ALL_FACK[2][1])],
+        [types.InlineKeyboardButton(text=ALL_FACK[3][0], url=ALL_FACK[3][1])],
+    ]
+    )
+    bot.send_message(msg.from_user.id, "Расписание:", reply_markup=markup)
 @bot.message_handler(commands=["up_professor"])
 def g_caf(msg):
-    if not is_admin(msg):
+    if not is_admin_chat(msg):
         return
     con = sqlite3.connect('users.db')
     cur = con.cursor()
@@ -73,15 +96,18 @@ def g_caf(msg):
     f = []
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     for i in ol_caf:
-        s = i[0]
+        s = str(i[0])
         f.append(types.KeyboardButton(text=s))
     markup.add(*f, row_width=1)
     con.close()
     bot.send_message(msg.from_user.id, text="Выберите кафедру", reply_markup=markup)
+    msg.chat.id = msg.from_user.id
     bot.register_next_step_handler(msg, g_prof)
 
 
 def g_prof(msg):
+    if msg.text == "/ret":
+        return
     caf = msg.text
     con = sqlite3.connect('users.db')
     cur = con.cursor()
@@ -101,6 +127,8 @@ def g_prof(msg):
 
 
 def get_name(msg, caf):
+    if msg.text == "/ret":
+        return
     name = " ".join(msg.text.split(" ")[:3])
     cab = msg.text.split(" ")[3]
     corp = msg.text.split(" ")[4]
@@ -116,7 +144,6 @@ def get_name(msg, caf):
     con.close()
     s = f"Успешно обновленно:\n{caf} {name} Кабинет: {cab} Корпус: {corp}"
     bot.send_message(msg.from_user.id, s)
-
 
 @bot.message_handler(commands=["opt_professor"])
 def giv_caf(msg):
@@ -136,6 +163,8 @@ def giv_caf(msg):
 
 
 def give_prof(msg):
+    if msg.text == "/ret":
+        return
     caf = msg.text
     con = sqlite3.connect('users.db')
     cur = con.cursor()
@@ -149,39 +178,6 @@ def give_prof(msg):
     bot.send_message(msg.from_user.id, s, reply_markup=types.ReplyKeyboardRemove())
 
 
-@bot.message_handler(commands=["del"])
-def delet(msg):
-    if not is_admin(msg):
-        return
-    con = sqlite3.connect('users.db')
-    cur = con.cursor()
-    r = f"SELECT CORP FROM USERS WHERE USER_ID = '{msg.from_user.id}'"
-    corp = cur.execute(r).fetchone()
-    if corp is None:
-        bot.send_message(msg.from_user.id, text="У вас не выбран корпус\n /opt_structure")
-        return
-    corp = corp[0]
-    bot.send_message(msg.from_user.id, f"Введите аудиторию(Корпус: {corp}),\nкоторую вы хотите удалить из списка:")
-    f = []
-    for (dirpath, dirnames, filenames) in os.walk('videos/' + 'corpus' + str(corp)):
-        f.extend(filenames)
-        break
-    f = [x.split('.')[0] for x in f]
-    bot.send_message(msg.from_user.id, '\n'.join(f))
-    bot.register_next_step_handler(msg, com, f=f, corp=corp)
-
-
-def com(msg, f, corp):
-    if msg.text == '/ret':
-        return
-    if not msg.text in f:
-        bot.send_message(msg.from_user.id, text="Данная аудитория не обнаружена")
-        return
-    pth = 'videos/' + 'corpus' + str(corp) + '/' + msg.text + ".mp4"
-    os.remove(pth)
-    bot.send_message(msg.from_user.id, f"аудитория {msg.text} удалена")
-
-
 @bot.message_handler(commands=['list'])
 def ls(msg):
     con = sqlite3.connect('users.db')
@@ -193,11 +189,12 @@ def ls(msg):
         return
     corp = corp[0]
     bot.send_message(msg.from_user.id, text=f"Аудитории корпуса {corp}")
-    f = []
-    for (dirpath, dirnames, filenames) in os.walk('videos/' + 'corpus' + str(corp)):
-        f.extend(filenames)
-        break
-    bot.send_message(msg.from_user.id, '\n'.join([x.split('.')[0] for x in f]))
+    fs = []
+    with open('videos.txt', mode='r', encoding='UTF-8') as f:
+        s = [x.strip().split('=') for x in f.readlines()]
+        for cor, cab, file in sorted(s):
+            fs.append(cab)
+    bot.send_message(msg.from_user.id, '\n'.join(fs))
 
 
 @bot.message_handler(commands=["opt_structure"])
@@ -212,6 +209,8 @@ def opt_structure(msg):
 
 
 def set_corp(msg):
+    if msg.text == "/ret":
+        return
     if not msg.text in ["1", "2", "3"]:
         bot.send_message(msg.from_user.id, text="Выберите корпус")
         bot.register_next_step_handler(msg, set_corp)
@@ -233,55 +232,30 @@ def set_corp(msg):
     con.commit()
     con.close()
 
-
-@bot.message_handler(commands=["add"])
-def add(msg):
-    if msg.text == "/ret":
+@bot.message_handler(content_types=["video"])
+def vid(msg):
+    if not is_admin(msg):
         return
-    con = sqlite3.connect('users.db')
-    cur = con.cursor()
-    r = f"SELECT CORP FROM USERS WHERE USER_ID = '{msg.from_user.id}'"
-    corp = cur.execute(r).fetchone()
-    if corp is None:
-        bot.send_message(msg.from_user.id, text="У вас не выбран корпус\n /opt_structure")
-        return
-    corp = corp[0]
-    bot.send_message(msg.from_user.id, f"Корпус: {corp}\nВведите номер аудитории",
-                     reply_markup=types.ReplyKeyboardRemove())
-    bot.register_next_step_handler(msg, get_aud, corp=corp)
-
-
-def get_aud(msg, corp):
-    if msg.text == "/ret":
-        return
-    aud = msg.text
-    if aud is None:
-        bot.send_message(msg.from_user.id, "Введите номер аудитории")
-        bot.register_next_step_handler(msg, get_aud, corp=corp)
-        return
-    bot.send_message(msg.from_user.id, "Отправьте видео в формате mp4")
-    bot.register_next_step_handler(msg, save, aud=aud, corp=corp)
+    file = msg.video.file_id
+    corp_cab = msg.json["caption"].split()
+    flag = False
+    line = ""
+    with open('videos.txt', mode='r', encoding='UTF-8') as f:
+        s = [x.strip().split('=') for x in f.readlines()]
+        for cor, c, fl in s:
+            if c == corp_cab[1] and cor == corp_cab[0]:
+                flag = True
+                line += f'{corp_cab[0]}={c}={file}\n'
+            else:
+                line += f'{corp_cab[0]}={c}={fl}\n'
+    if not flag:
+        line += f"{corp_cab[0]}={c}={file}"
+    line = line.strip()
+    f = open("videos.txt", 'w', encoding='UTF-8')
+    f.write(line)
+    f.close()
 
 
-def save(msg, aud, corp):
-    if msg.text == "/ret":
-        return
-    try:
-        file_info = bot.get_file(msg.video.file_id)
-    except:
-        bot.send_message(msg.from_user.id, "Отправьте видео в формате mp4")
-        bot.register_next_step_handler(msg, save, aud=aud, corp=corp)
-        return
-
-    downloaded_file = bot.download_file(file_info.file_path)
-    if file_info.file_path.split(".")[-1] != 'mp4':
-        bot.send_message(msg.from_user.id, "Отправьте видео в формате mp4")
-        bot.register_next_step_handler(msg, save, aud=aud, corp=corp)
-        return
-    src = 'videos/' + 'corpus' + str(corp) + '/' + aud + "." + file_info.file_path.split(".")[-1]
-    with open(src, 'wb') as new_file:
-        new_file.write(downloaded_file)
-    bot.send_message(msg.from_user.id, f"аудитория {aud} добаленна")
 
 
 @bot.message_handler(content_types=["text"])
@@ -294,21 +268,26 @@ def path(msg):
         bot.send_message(msg.from_user.id, text="У вас не выбран корпус\n /opt_structure")
         return
     corp = corp[0]
-    file, err = find_path(corpus=str(corp), aud=msg.text)
-    if not err:
-        bot.send_message(msg.from_user.id,
-                         text="Извините, что-то пошло не так\nВозможно мы еще не добавили эту аудиторию")
-        return
-    with open(file, 'rb') as video:
-        bot.send_message(msg.from_user.id, f"Корпус: {corp} Аудитория: {msg.text}")
-        bot.send_video(msg.from_user.id, video)
+    try:
+        with open('videos.txt', mode='r', encoding='UTF-8') as f:
+            s = [x.strip().split('=') for x in f.readlines()]
+            for cor, cab, file in s:
+                if cab == msg.text and cor == str(corp):
+                    break
+            else:
+                bot.send_message(msg.from_user.id,
+                                 text="Извините, что-то пошло не так\nВозможно мы еще не добавили эту аудиторию")
+                return
+    except:
+        bot.send_message(msg.from_user.id, "Извините, что-то пошло не так")
+    bot.send_message(msg.from_user.id, f"Корпус: {corp} Аудитория: {msg.text}")
+    bot.send_video(msg.from_user.id, file)
 
 
 def main():
-    print(bcolors.OKGREEN + 'Status: ' + bcolors.BOLD + 'Working' + bcolors.BOLD + bcolors.OKGREEN)
-    print(bcolors.HEADER)
+    print(bcolors.OKGREEN + 'Status: ' + bcolors.BOLD + 'Working' + bcolors.ENDC)
     bot.polling(none_stop=True, interval=0)
-    print(bcolors.WARNING + 'Status: ' + bcolors.BOLD + 'Not Working' + bcolors.BOLD + bcolors.WARNING)
+    print(bcolors.FAIL + 'Status: ' + bcolors.BOLD + 'Not Working')
 
 
 if __name__ == '__main__':
